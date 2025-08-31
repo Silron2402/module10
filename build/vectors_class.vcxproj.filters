@@ -4,6 +4,9 @@
     <ClCompile Include="E:\SKILLBOX\siplusplus\module10\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="E:\SKILLBOX\siplusplus\module10\src\vector3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="E:\SKILLBOX\siplusplus\module10\CMakeLists.txt" />

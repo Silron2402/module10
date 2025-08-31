@@ -34,18 +34,47 @@ PYBIND11_MODULE(vectors_class, m)
       Pybind11 test
       -------------
     )pbdoc";
-
-    py::class_<Vector3D>(m, "Vector")
+    //введено указание на то, что класс относится к shared_ptr
+    py::class_<Vector3D,std::shared_ptr<Vector3D>>(m, "Vector")
+        // Конструктор по умолчанию
         .def(py::init<>())
+
         // Параметризованный конструктор
         .def(py::init<double, double, double>(),
              py::arg("x") = 0.0, py::arg("y") = 0.0, py::arg("z") = 0.0)
-        .def("length", &Vector3D::length)
-        .def("norm_vec", &Vector3D::norm_vec)
-        .def("normalize",&Vector3D::normalize)
-        .def("print", &Vector3D::print);
 
+        // Метод для расчета длины вектора
+        .def("length", &Vector3D::length, "returns length of your vector")
+
+        // Метод для расчета нормы вектора
+        .def("norm_vec", &Vector3D::norm_vec, "return norm of your vector")
+
+        // Метод для нормализации вектора
+        .def("normalize", &Vector3D::normalize, "normalizes your vector")
+
+        // Метод для вывода вектора
+        .def("print", &Vector3D::print, "prints your vector")
+
+        // Доступ к первому элементу вектора (геттер и сеттер, реализоанные через лямбда функцию) 
+        .def_property("x", [](Vector3D &self)
+                      { return self(0); }, [](Vector3D &self, double value)
+                      { self(0) = value; })
+
+        // Доступ ко второму элементу вектора (геттер и сеттер, реализоанные через лямбда функцию) 
+        .def_property("y", [](Vector3D &self)
+                      { return self(1); }, [](Vector3D &self, double value)
+                      { self(1) = value; }) 
+
+        // Доступ к третьему элементу вектора (геттер и сеттер, реализоанные через лямбда функцию) 
+        .def_property("z", [](Vector3D &self)
+                      { return self(2); }, [](Vector3D &self, double value)
+                      { self(2) = value; });  
+
+
+
+    m.def("add", &addVector, R"pbdoc( add two vectors)pbdoc", py::arg("v1"), py::arg("v2"));
     
-    
-    m.def("add", &addVector, R"pbdoc( add two numbers)pbdoc");
+    m.def("substract", &substractVector, R"pbdoc( substract two vectors)pbdoc", py::arg("v1"), py::arg("v2"));
+
+    m.def("vector_dot", &dotVector, R"pbdoc( scalar multiplication of two vectors)pbdoc", py::arg("v1"), py::arg("v2"));
 }

@@ -14,7 +14,9 @@ find_package(Python COMPONENTS Interpreter Development REQUIRED)
 add_subdirectory(libs/pybind11)
 
 
-pybind11_add_module(vectors_class src/main.cpp )
+pybind11_add_module(vectors_class
+    src/main.cpp
+    src/vector3d.cpp)
 
 
 #set(CMAKE_BUILD_TYPE Debug)

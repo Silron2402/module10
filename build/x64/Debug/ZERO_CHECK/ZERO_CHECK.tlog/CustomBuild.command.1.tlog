@@ -1,0 +1,10 @@
+^E:\SKILLBOX\SIPLUSPLUS\VECTOR3D_MODULE\BUILD\CMAKEFILES\B1ED44F021AA603F89720777A5FC8EDF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/SKILLBOX/siplusplus/vector3d_module -BE:/SKILLBOX/siplusplus/vector3d_module/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/SKILLBOX/siplusplus/vector3d_module/build/vectors_class.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

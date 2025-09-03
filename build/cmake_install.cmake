@@ -1,8 +1,8 @@
-# Install script for directory: E:/SKILLBOX/siplusplus/module10
+# Install script for directory: E:/SKILLBOX/siplusplus/vector3d_module
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/practice10")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/vectors_class")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,13 +34,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("E:/SKILLBOX/siplusplus/module10/build/libs/pybind11/cmake_install.cmake")
+  include("E:/SKILLBOX/siplusplus/vector3d_module/build/libs/pybind11/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "E:/SKILLBOX/siplusplus/module10/build/install_local_manifest.txt"
+  file(WRITE "E:/SKILLBOX/siplusplus/vector3d_module/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,6 +56,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "E:/SKILLBOX/siplusplus/module10/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "E:/SKILLBOX/siplusplus/vector3d_module/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

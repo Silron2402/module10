@@ -1,0 +1,8 @@
+setup.py
+src/main.cpp
+src/vector3d.cpp
+vectors_class.egg-info/PKG-INFO
+vectors_class.egg-info/SOURCES.txt
+vectors_class.egg-info/dependency_links.txt
+vectors_class.egg-info/requires.txt
+vectors_class.egg-info/top_level.txt

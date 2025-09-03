@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: vectors_class
+Version: 0.1.0
+Summary: Python bindings for Vector3D C++ class
+Author: Andrew
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: Operating System :: OS Independent
+Requires-Dist: pybind11
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary

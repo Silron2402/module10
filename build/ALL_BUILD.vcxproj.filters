@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="E:\SKILLBOX\siplusplus\module10\CMakeLists.txt" />
+    <CustomBuild Include="E:\SKILLBOX\siplusplus\vector3d_module\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

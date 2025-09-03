@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\SKILLBOX\siplusplus\module10\src\main.cpp">
+    <ClCompile Include="E:\SKILLBOX\siplusplus\vector3d_module\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\SKILLBOX\siplusplus\module10\src\vector3d.cpp">
+    <ClCompile Include="E:\SKILLBOX\siplusplus\vector3d_module\src\vector3d.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\SKILLBOX\siplusplus\module10\CMakeLists.txt" />
+    <CustomBuild Include="E:\SKILLBOX\siplusplus\vector3d_module\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{0635AC0E-0929-3E1B-B179-3C99D5267A01}</UniqueIdentifier>
+      <UniqueIdentifier>{FC1E9EB8-A809-3859-ACB8-8781192BA2DA}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
